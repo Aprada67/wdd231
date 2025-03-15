@@ -1,0 +1,94 @@
+{
+    "companies": [
+        {
+            "name": "Alimentos Polar",
+            "address": "Zona Industrial de Carabobo, Valencia, Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.alimentospolar.com",
+            "image": null,
+            "memberLevel": 3,
+            "sector": "Food & Beverage Industry"
+        },
+        {
+            "name": "Imeca",
+            "address": "Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://imeca.com.ve/",
+            "image": null,
+            "memberLevel": 2,
+            "sector": "Furniture & Home"
+        },
+        {
+            "name": "Cervecería Regional",
+            "address": "Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.cerveceriaregional.com/",
+            "image": null,
+            "memberLevel": 3,
+            "sector": "Beverage Industry - Beer Production"
+        },
+        {
+            "name": "Grupo Lala",
+            "address": "Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.lala.com.ve",
+            "image": null,
+            "memberLevel": 1,
+            "sector": "Dairy Products"
+        },
+        {
+            "name": "Farmatodo",
+            "address": "Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.farmatodo.com.ve",
+            "image": null,
+            "memberLevel": 3,
+            "sector": "Retail - Pharmacy & Health"
+        },
+        {
+            "name": "Supermercados Central Madeirense",
+            "address": "Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.madeirense.com.ve",
+            "image": null,
+            "memberLevel": 3,
+            "sector": "Retail - Supermarkets"
+        },
+        {
+            "name": "Daka",
+            "address": "Valencia, Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.daka.com.ve",
+            "image": null,
+            "memberLevel": 2,
+            "sector": "Retail - Electronics & Appliances"
+        },
+        {
+            "name": "General Motors Venezuela",
+            "address": "Zona Industrial de Carabobo, Valencia, Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.gm.com/",
+            "image": null,
+            "memberLevel": 2,
+            "sector": "Automotive - Vehicle Manufacturing"
+        },
+        {
+            "name": "Paveca (Papelera Venezolana C.A.)",
+            "address": "Zona Industrial de Carabobo, Valencia, Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.paveca.com",
+            "image": null,
+            "memberLevel": 1,
+            "sector": "Manufacturing - Paper & Hygiene Products"
+        },
+        {
+            "name": "Nestlé Venezuela",
+            "address": "Planta Valencia, Carabobo, Venezuela",
+            "phoneNumber": null,
+            "url": "https://www.nestle.com.ve",
+            "image": null,
+            "memberLevel": 2,
+            "sector": "Food & Beverage Industry"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global variables */
+
+:root {
+
+    /* Colors */
+    --font-primaty-color: #252525;
+    --font-secondary-color: #ffffff;
+    --primary-color: #212d4d;
+    --secondary-color: #d68c45;
+    --accent-color: #ffb000;
+
+    /* Font sizes */
+    --font-title: 1.5rem;
+    --font-subtitle: 1.25rem;
+    --font-heading: .85rem;
+    --font-paragraph: .75rem;
+
+    /* Font weight */
+    --font-thin: 200;
+    --font-normal: 300;
+    --font-semibold: 400;
+    --font-bold: 500;
+    --font-extrabold: 700;
+
+    /* Font Style */
+    --font-logo: "Bebas Neue", sans-serif;
+    --font-content: "Lato", sans-serif;
+}

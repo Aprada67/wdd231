@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carabobensis Chamber of Commerce</title>
     <meta name="author" content="Alberto Prada">
-    <meta
-        name="description"
-        content="Join our Chamber of Commerce to boost your business 
+    <meta name="description" content="Join our Chamber of Commerce to boost your business 
         visibility. Access exclusive promotion opportunities, directories, 
-        and events that will expand your reach in the business community."
-    >
+        and events that will expand your reach in the business community.">
     <meta property="og:title" content="Carabobensis Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta
-        property="og:url"
-        content="https://aprada67.github.io/wdd231/chamber/directory.html"
-    >
+    <meta property="og:url" content="https://aprada67.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="pending...">
     <meta property="og:site_name" content="Carabobensis Chamber of Commerce">
-    <meta
-        property="og:description"
-        content="Join our Chamber of Commerce to boost your business 
+    <meta property="og:description" content="Join our Chamber of Commerce to boost your business 
         visibility. Access exclusive promotion opportunities, directories, 
-        and events that will expand your reach in the business community."
-    >
+        and events that will expand your reach in the business community.">
     <link rel="icon" type="image/webp" sizes="32x32" href="images/favicon.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet"
+    >
     <script src="scripts/index.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
+
 <body>
-    
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img id="logo" class="logo" src="images/logo.webp">
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="menu" class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Directory</a></li>
+                <li><a href="#skills">Join</a></li>
+                <li><a href="#education">Discover</a></li>
+            </ul>
+        </nav>
+        <div class="underline"></div>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="hero-img">
+            <div class="overlay"></div>
+            <picture>
+                <source srcset="images/hero-large.gif" media="(min-width: 768px)">
+                <img class="hero-img" src="images/hero-small.gif" alt="Background Image">
+            </picture>
+        </div>
+        <div class="content">
+            <h1>Carabobensis Chamber of Commerce: Empowering Local Businesses, Fostering Growth</h1>
+            <p>  
+                Carabobensis Chamber of Commerce is dedicated to supporting local businesses
+                by providing valuable resources, fostering connections, and promoting 
+                economic growth within the region. We strive to create a thriving community 
+                where businesses can flourish and contribute to the overall prosperity of Carabobo.
+            </p>
+            <a href="#portfolio" class="btn-explore btn">Explore</a>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+        <div id="cards"></div>
+    </main>
+
+     <!-- Footer -->
+     <footer class="container">
+        <div>
+            <h4>Contact Us</h4>
+            <p>info-chamber@carabobensis.org</p>
+            <p>(0241) 123-4567</p>
+            <p>Av. Bolivar Norte C.C Camoruco, 2001</p>
+            <p>Valencia - Carabobo</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="my-info">
+            <p>WDD231 Class Project</p>
+            <p>Alberto Prada</p>
+            <p id="copyrigth"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
+
 </html>
