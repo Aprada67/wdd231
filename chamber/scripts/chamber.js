@@ -1,4 +1,4 @@
-// Hamburguer menu
+// ----- Hamburguer menu -----
 function toggleMenu() {
     const menu = document.getElementById("menu");
     const menuIcon = document.getElementById("menu-icon");
@@ -33,3 +33,19 @@ document.querySelectorAll("#menu li a").forEach(link => {
         document.getElementById("menu-icon").classList.remove("open");
     });
 });
+
+// ----- Cards -----
+const url = "data/members.json";
+const cards = document.querySelector("#cards");
+
+// Parse the json data
+async function getCompaniesData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.table(data.companies)
+    //displayCompanies();
+}
+
+getCompaniesData();
+
+// Build company card
