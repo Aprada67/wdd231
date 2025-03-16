@@ -81,15 +81,24 @@ const displayCompanies = (companies) => {
         let phone = document.createElement("p");
         let url = document.createElement("a");
 
-        // Set classes
+        // Container for the image and contact details
+        let detailsContainer = document.createElement("div");
+        let infoContainer = document.createElement("div");
+
+        // Assign classes for styling
         card.classList.add("company-card");
+        detailsContainer.classList.add("company-details");
+        infoContainer.classList.add("company-info");
+        sector.classList.add("subheading");
 
         // Set information
         businessName.textContent = company.name;
         sector.textContent = company.sector;
         address.textContent = company.address;
-        phone.textContent = company.phoneNumber;
+        phone.innerHTML = "<strong>Telf:</strong> " + company.phoneNumber;
         url.textContent = company.url;
+        url.href = company.url;
+        url.target = "_blank";
 
         // Set image attributes
         logo.setAttribute("src", company.image);
@@ -98,14 +107,25 @@ const displayCompanies = (companies) => {
         logo.setAttribute('width', '200');
         logo.setAttribute('height', '200');
 
-        // Append created elements to card div
+        // Card structure:
         card.appendChild(businessName);
         card.appendChild(sector);
-        card.appendChild(logo);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(url);
 
+        // Add image on the left inside the details container
+        detailsContainer.appendChild(logo);
+
+        // Add contact information inside the info container
+        infoContainer.appendChild(address);
+        infoContainer.appendChild(phone);
+        infoContainer.appendChild(url);
+
+        // Place the info container to the right of the image
+        detailsContainer.appendChild(infoContainer);
+
+        // Add the details container to the card
+        card.appendChild(detailsContainer);
+
+        // Append the completed card to the main container
         cards.appendChild(card);
     });
 }
