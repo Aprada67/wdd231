@@ -31,7 +31,7 @@
     <link 
         rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" 
-    />
+    >
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -45,7 +45,7 @@
     <header class="header">
         <nav class="navbar">
             <div class="navbar-left">
-                <img id="logo" class="logo" src="images/logo.webp" loading="lazy">
+                <img id="logo" class="logo" src="images/logo.webp" alt="Logo" loading="lazy" width="50" height="50">
                 <h2 id="logo-name">Carabobensis<br>Chamber</h2>
             </div>
             <div class="menu-icon" id="menu-icon">
@@ -89,14 +89,14 @@
     </section>
 
     <!-- Experience -->
-    <section id="user-experience">
-        <button id="grid" class="btn">⏹️ Grid</button>
-		<button id="list" class="btn">📄 List</button>
-    </section>
+    <div id="user-experience">
+        <button id="grid" class="btn">⏹️ Grid View</button>
+		<button id="list" class="btn">📄 List View</button>
+    </div>
 
     <!-- Main -->
     <main id="companies">
-        <div id="cards"></div>
+        <div id="cards" class="initial-view"></div>
     </main>
 
      <!-- Footer -->
@@ -108,17 +108,19 @@
             <p>Av. Bolivar Norte C.C Camoruco, 2001</p>
             <p>Valencia - Carabobo</p>
         </div>
-        <h4>Stay Connected</h4>
         <div class="social-links">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook" loading="lazy">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.svg" alt="Twitter" loading="lazy">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="images/instagram.svg" alt="Instagram" loading="lazy">
-            </a>
+            <h4>Stay Connected</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook" loading="lazy" width="25" height="25">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.svg" alt="Twitter" loading="lazy" width="25" height="25">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.svg" alt="Instagram" loading="lazy" width="25" height="25">
+                </a>
+            </div>
         </div>
         <div class="my-info">
             <p>WDD231 Class Project</p>

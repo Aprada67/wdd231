@@ -1,15 +1,6 @@
 {
     "companies": [
         {
-            "name": "Alimentos Polar",
-            "address": "Zona Industrial de Carabobo, Valencia, Carabobo, Venezuela",
-            "phoneNumber": "0800 3728 242",
-            "url": "https://www.alimentospolar.com",
-            "image": "images/companies/alimentos-polar.jpg",
-            "memberLevel": 3,
-            "sector": "Food & Beverage Industry"
-        },
-        {
             "name": "Imeca",
             "address": "Carabobo, Venezuela",
             "phoneNumber": "+58 414-4002020",
@@ -17,24 +8,6 @@
             "image": "images/companies/imeca.jpg",
             "memberLevel": 2,
             "sector": "Furniture & Home"
-        },
-        {
-            "name": "Cervecería Regional",
-            "address": "Carabobo, Venezuela",
-            "phoneNumber": "0800 734 46 62",
-            "url": "https://www.cerveceriaregional.com/",
-            "image": "images/companies/cerveceria-regional.jpg",
-            "memberLevel": 3,
-            "sector": "Beverage Industry - Beer Production"
-        },
-        {
-            "name": "Grupo Lala",
-            "address": "Carabobo, Venezuela",
-            "phoneNumber": "(871) 229 39 40",
-            "url": "https://www.lala.com.ve",
-            "image": "images/companies/grupo-lala.jpg",
-            "memberLevel": 1,
-            "sector": "Dairy Products"
         },
         {
             "name": "Farmatodo",

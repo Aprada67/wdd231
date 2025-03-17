@@ -36,23 +36,6 @@ document.querySelectorAll("#menu li a").forEach(link => {
     });
 });
 
-// ---------------------------------
-// ----- Grid and List Buttons -----
-// ---------------------------------
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
-const display = document.querySelector("#cards")
-
-gridButton.addEventListener("click", () => {
-    display.classList.add("company-grid");
-    display.classList.remove("company-list");
-});
-
-listButton.addEventListener("click", () => {
-    display.classList.add("company-list");
-    display.classList.remove("company-grid");
-});
-
 
 // -----------------
 // ----- Cards -----
@@ -104,8 +87,8 @@ const displayCompanies = (companies) => {
         logo.setAttribute("src", company.image);
         logo.setAttribute("alt", `${company.name} Logo`);
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute('width', '200');
-        logo.setAttribute('height', '200');
+        logo.setAttribute('width', '75');
+        logo.setAttribute('height', '75');
 
         // Card structure:
         card.appendChild(businessName);
@@ -129,3 +112,20 @@ const displayCompanies = (companies) => {
         cards.appendChild(card);
     });
 }
+
+// ---------------------------------
+// ----- Grid and List Buttons -----
+// ---------------------------------
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const display = document.querySelector("#cards")
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("company-grid");
+    display.classList.remove("company-list");
+});
+
+listButton.addEventListener("click", () => {
+    display.classList.add("company-list");
+    display.classList.remove("company-grid");
+});
