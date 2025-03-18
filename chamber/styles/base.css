@@ -77,6 +77,11 @@ p {
     margin-bottom: 3rem;
 }
 
+#toggle-cards {
+    display: block;
+    margin: 1rem auto 0 auto;
+}
+
 /* Images */
 img {
     max-width: 100%;
@@ -268,7 +273,7 @@ h1 {
 }
 
 /* Main */
-main {
+#companies {
     background-color: #f0e4d7;
     background-image: url("https://i.pinimg.com/1200x/84/57/25/84572519512bffe2761e935b3386f257.jpg");
     background-size: cover;

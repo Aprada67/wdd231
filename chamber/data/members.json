@@ -5,7 +5,7 @@
             "address": "Carabobo, Venezuela",
             "phoneNumber": "+58 414-4002020",
             "url": "https://imeca.com.ve/",
-            "image": "images/companies/imeca.jpg",
+            "image": "images/companies/imeca.webp",
             "memberLevel": 2,
             "sector": "Furniture & Home"
         },
@@ -14,7 +14,7 @@
             "address": "Carabobo, Venezuela",
             "phoneNumber": "0800 327 628 636",
             "url": "https://www.farmatodo.com.ve",
-            "image": "images/companies/farmatodo.jpg",
+            "image": "images/companies/farmatodo.webp",
             "memberLevel": 3,
             "sector": "Retail - Pharmacy & Health"
         },
@@ -23,7 +23,7 @@
             "address": "Carabobo, Venezuela",
             "phoneNumber": "0241 823 5912",
             "url": "https://www.madeirense.com.ve",
-            "image": "images/companies/central-madeirense.jpg",
+            "image": "images/companies/central-madeirense.webp",
             "memberLevel": 3,
             "sector": "Retail - Supermarkets"
         },
@@ -32,7 +32,7 @@
             "address": "Valencia, Carabobo, Venezuela",
             "phoneNumber": "+58 424-4624218",
             "url": "https://www.daka.com.ve",
-            "image": "images/companies/daka.jpg",
+            "image": "images/companies/daka.webp",
             "memberLevel": 2,
             "sector": "Retail - Electronics & Appliances"
         },
@@ -41,7 +41,7 @@
             "address": "Zona Industrial de Carabobo, Valencia, Carabobo, Venezuela",
             "phoneNumber": "0241 200 9600",
             "url": "https://www.gm.com/",
-            "image": "images/companies/general-motors.jpg",
+            "image": "images/companies/general-motors.webp",
             "memberLevel": 2,
             "sector": "Automotive - Vehicle Manufacturing"
         },
@@ -50,7 +50,7 @@
             "address": "Zona Industrial de Carabobo, Valencia, Carabobo, Venezuela",
             "phoneNumber": "+58 245 4003430",
             "url": "https://www.paveca.com",
-            "image": "images/companies/paveca.jpg",
+            "image": "images/companies/paveca.webp",
             "memberLevel": 1,
             "sector": "Manufacturing - Paper & Hygiene Products"
         },
@@ -59,7 +59,7 @@
             "address": "Planta Valencia, Carabobo, Venezuela",
             "phoneNumber": "+58 212 8208000",
             "url": "https://www.nestle.com.ve",
-            "image": "images/companies/nestle.jpg",
+            "image": "images/companies/nestle.webp",
             "memberLevel": 2,
             "sector": "Food & Beverage Industry"
         }
