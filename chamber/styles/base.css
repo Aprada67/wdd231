@@ -72,6 +72,10 @@ p {
     border: none;
 }
 
+.btn:hover {
+    transform: scale(1.1);
+}
+
 .btn-watch {
     margin-bottom: 3rem;
 }
