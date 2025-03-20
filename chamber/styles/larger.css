@@ -18,7 +18,6 @@
     }
 
     section,
-    main,
     footer {
         padding: 2rem 5%;
         margin: 0 auto;
@@ -95,6 +94,23 @@
         margin-top: 20px;
         font-weight: 600;
     }
-    
+
+    #home {
+        height: 80vh;
+    }
+
+    #home .content {
+        background: linear-gradient(135deg, #d9d9d9, #bfbfbf, #ffffff);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+        padding: 3rem 1rem;
+        border-radius: 8px;
+    }
+
+    .social-links-hero {
+        background: linear-gradient(135deg, #000000, #333333, #111111);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2); /* Simula brillo metálico */
+        padding: 1rem;
+        border-radius: 8px;
+    }
     
 }
