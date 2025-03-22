@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamb-menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -138,8 +139,20 @@
 
                 <div class="box-container">
                     <h3> Current Weather</h3>
-                    <div>
-
+                    <div class="weather-container">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <div class="weather-info">
+                            <span id="current-temp"></span>
+                            <span id="current-weather"></span>
+                            <p>High: <span id="high-temp"></span></p>
+                            <p>Low: <span id="low-temp"></span></p>
+                            <p>Humidity: <span id="humidity"></span></p>
+                            <p>Sunrise: <span id="sunrise"></span></p>
+                            <p>Sunset: <span id="sunset"></span></p>
+                        </div>
                     </div>
                 </div>
 

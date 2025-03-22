@@ -526,7 +526,8 @@ h4 {
 
 .figure-box {
     background-color: var(--bg-primary-color);
-    border: 2px solid black;
+    border: 1px solid black;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     margin: 2rem 0;
     padding: 1rem;
@@ -538,6 +539,7 @@ h4 {
 
 .figure-box:first-of-type {
     margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .figure-box h4 {
@@ -548,3 +550,5 @@ h4 {
 .figure-box p:last-of-type {
     font-style: italic;
 }
+
+/* Weather */
