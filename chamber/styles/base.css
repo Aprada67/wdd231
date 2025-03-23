@@ -67,7 +67,6 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: var(--font-weight-bold);
-    border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     border: none;
 }
@@ -205,7 +204,6 @@ header {
     padding: .35rem;
     width: 40px;
     height: 40px;
-    border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -287,7 +285,7 @@ h1 {
 
 #cards {
     margin: 0 auto;
-    padding-top: 2.5rem;
+    padding: 2rem;
 }
 
 .initial-view,
@@ -311,7 +309,6 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0;
-    border-radius: 0;
 }
 
 .company-list .company-card:nth-child(even) {
@@ -339,7 +336,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding: .75rem;
-    border-radius: 8px;
     background-color: var(--bg-primary-color);
     width: 280px;
     height: 200px;
@@ -376,7 +372,6 @@ h1 {
     width: 75px;
     max-width: 100%;
     height: 75px;
-    border-radius: 8px;
 }
 
 .company-info {
@@ -505,16 +500,15 @@ h4 {
 .news-grid {
     display: grid;
     grid-template-columns: 1fr;
+    place-items: center;
+    grid-gap: 1rem;
 }
 
 .box-container {
     background-color: var(--bg-tertiary-color);
-    border-radius: 8px;
-    padding: 1rem;
     position: relative;
-    margin: 0 auto 2rem auto;
-    min-width: 320px;
-    max-width: 450px;
+    width: 100%;
+    padding: 1rem;
 }
 
 .box-container h3 {
@@ -528,41 +522,29 @@ h4 {
     left: 0;
     margin: 0;
     width: 100%;
-    border-radius: 8px 8px 0 0;
 }
 
-.figure-box,
+.paragraph-container,
 .weather-container,
 .weather-forecast {
     background-color: var(--bg-primary-color);
     border: 1px solid black;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-    margin: 2rem 0;
-    padding: 1rem;
     line-height: 1.5;
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto;
+    padding: 1rem;
 }
 
-.figure-box:first-of-type,
+.paragraph-container:first-of-type,
 .weather-container:first-of-type,
 .weather-forecast:first-of-type {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
-.figure-box {
-    max-height: 500px;
-}
-
-.figure-box h4 {
-    margin-top: 1rem;
-    font-weight: var(--font-weight-extrabold);
-}
-
-.figure-box p:last-of-type {
-    font-style: italic;
+.news-box,
+.weather-container,
+.weather-forecast {
+    max-width: 100%;
 }
 
 /* Weather */
@@ -573,13 +555,12 @@ h4 {
 
 /* Company SpotLight */
 .company-spotlight {
-    margin: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
     line-height: 1.5;
-    border-radius: 8px;
     background-color: var(--bg-primary-color);
-    padding: 1rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    min-width: 250px;
 }
 
 .company-spotlight h4 {
