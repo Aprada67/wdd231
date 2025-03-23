@@ -13,7 +13,7 @@ const todayWeather = document.querySelector("#today");
 const tomorrowWeather = document.querySelector("#tomorrow");
 const afterTomorrowWeather = document.querySelector("#after-tomorrow");
 
-// Api Url Const (Ahora usando el endpoint forecast)
+// Api Url Const using Forecast
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=10.16&lon=-68.00&units=imperial&appid=3851f9301209bdb68f44e33249150239";
 
 let todayDate = new Date();
@@ -25,7 +25,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // Verifica si el objeto data es correcto
+            // console.log(data);
             displayCurrentWeather(data);
             displayWeatherForecast(data);
         } else {
