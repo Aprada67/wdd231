@@ -55,11 +55,16 @@
         width: 70%;
     }
 
+    #cards {
+        height: 50vh;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        background-color: var(--secondary-color)
     }
     
     h4 {
@@ -113,6 +118,56 @@
     #home h1 {
         color: var(--primary-color);
         text-shadow: none;
+    }
+
+    .news-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .box-container {
+        display: block;
+    }
+
+    #company-spotlight-container {
+        grid-column: 1 / -1;
+    }
+
+    .news-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 800px;
+    }
+
+    .weather-container,
+    .weather-forecast {
+        height: 250px;
+    }
+
+    .figure-box,
+    .weather-container,
+    .weather-forecast {
+        margin-top: 4rem;
+    }
+
+    .figure-box:first-of-type,
+    .weather-container:first-of-type,
+    .weather-forecast:first-of-type {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #company-spotlight-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        background-color: var(--bg-primary-color);
+        margin: 0 auto;
+    }
+
+    .company-spotlight {
+        width: 400px;
     }
     
 }

@@ -14,7 +14,7 @@ const tomorrowWeather = document.querySelector("#tomorrow");
 const afterTomorrowWeather = document.querySelector("#after-tomorrow");
 
 // Api Url Const using Forecast
-const url = "https://api.openweathermap.org/data/2.5/forecast?lat=10.16&lon=-68.00&units=imperial&appid=3851f9301209bdb68f44e33249150239";
+const urlForecast = "https://api.openweathermap.org/data/2.5/forecast?lat=10.16&lon=-68.00&units=imperial&appid=3851f9301209bdb68f44e33249150239";
 
 let todayDate = new Date();
 let tomorrowDate = new Date(todayDate.getTime() + 24*60*60*1000);
@@ -22,7 +22,7 @@ let dayAfterTomorrowDate = new Date(todayDate.getTime() + 48*60*60*1000);
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(urlForecast);
         if (response.ok) {
             const data = await response.json();
             // console.log(data);
@@ -68,3 +68,36 @@ function displayWeatherForecast(data) {
 }
 
 apiFetch();
+
+// -----------------------------
+// ----- Company Spotlight -----
+// -----------------------------
+
+const url = "data/members.json";
+const cards = document.querySelector("#company-spotlight-container");
+
+async function getCompaniesData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    showCompanies(data.companies);
+}
+
+getCompaniesData(url);
+
+function showCompanies(companies) {
+    companies.slice(0, 3).forEach(company => {
+        const companyDiv = document.createElement("div");
+        companyDiv.classList.add("company-spotlight");
+
+        companyDiv.innerHTML = `
+            <h4>${company.name}</h4>
+            <p><strong>Member Level:</strong> ${"&#9733;".repeat(company.memberLevel)}</p>
+            <p><strong>Location:</strong> ${company.address}</p>
+            <p><strong>Website:</strong> <a href="${company.url}" target="_blank">${company.url}</a></p>
+            <p><strong>Phone:</strong> ${company.phoneNumber}</p>
+            <img src="${company.image}" alt="${company.name} logo" width="100">
+        `;
+
+        cards.appendChild(companyDiv);
+    });
+}
