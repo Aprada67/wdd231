@@ -524,11 +524,12 @@ h4 {
     border-radius: 8px 8px 0 0;
 }
 
-.figure-box {
+.figure-box,
+.weather-container,
+.weather-forecast {
     background-color: var(--bg-primary-color);
     border: 1px solid black;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
     margin: 2rem 0;
     padding: 1rem;
     line-height: 1.5;
@@ -537,7 +538,9 @@ h4 {
     margin: 0 auto;
 }
 
-.figure-box:first-of-type {
+.figure-box:first-of-type,
+.weather-container:first-of-type,
+.weather-forecast:first-of-type {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
@@ -552,3 +555,7 @@ h4 {
 }
 
 /* Weather */
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+}
