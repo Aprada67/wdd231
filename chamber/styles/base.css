@@ -566,3 +566,56 @@ h4 {
 .company-spotlight h4 {
     text-align: center;
 }
+
+/* Form */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: var(--font-subtitle);
+    font-family: var(--font-family-logo);
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+label:first-of-type {
+    margin-top: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: .75rem;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1);
+    transition: all .3s ease;
+}
+
+.required {
+    color: red;
+}
