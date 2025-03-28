@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamb-menu.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -103,7 +104,7 @@
 
                         <label for="level">Membership Level:</label>
                         <select class="option" name="level" id="level">
-                            <option value="nonp">🙏🏽 NP Membership</option>
+                            <option value="nonp">🥺 NP Membership</option>
                             <option value="bronze">🥉 Bronze Membership</option>
                             <option value="silver">🥈 Silver Membership</option>
                             <option value="gold">🥇 Gold Membership</option>
@@ -118,14 +119,15 @@
                     <input type="submit" class="btn" value="Submit">
                 </form>
             </section>
-
+            <div class="vertical-bar"></div>
             <!-- Membership Levels -->
-            <section id="memberlevels">
-                <h2>Membership Levels</h2>
+            <section id="memberLevels">
+                <h3>Membership Levels</h3>
                 <dialog id="dialogBox">
-                    <h4>Sample Level</h4>
-                    <p>Sample String</p>
-                    <button id="closeButton" aria-label="Close Dialog">Close</button>
+                    <h4 id="dialogHeading"></h4>
+                    <p id="dialogPrice"></p>
+                    <p id="dialogText"></p>
+                    <button id="closeModal" class="btn" aria-label="Close Dialog">Close</button>
                 </dialog>
             </section>
         </div>

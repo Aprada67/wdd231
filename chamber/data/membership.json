@@ -1,0 +1,28 @@
+{
+    "membershipLevels": [
+        {
+            "name": "Non-Profit Membership",
+            "level": null,
+            "cost": "Free",
+            "benefits": "Access to select community events, online resources, and networking forums."
+        },
+        {
+            "name": "Bronze Membership",
+            "level": 1,
+            "cost": "$30/year",
+            "benefits": "Access to all community events, monthly newsletters, and member-exclusive online content."
+        },
+        {
+            "name": "Silver Membership",
+            "level": 2,
+            "cost": "$70/year",
+            "benefits": "Early event registration, exclusive workshops, discounts on partner services, and priority networking opportunities."
+        },
+        {
+            "name": "Gold Membership",
+            "level": 3,
+            "cost": "$150/year",
+            "benefits": "VIP event access, one-on-one mentorship opportunities, featured promotions on platforms, and premium networking sessions."
+        }
+    ]
+}
