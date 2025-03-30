@@ -635,6 +635,9 @@ input[type="submit"] {
 }
 
 /* Membership Cards */
+#memberLevels {
+    overflow: hidden;
+}
 
 .member-card {
     width: 100%;
@@ -647,6 +650,14 @@ input[type="submit"] {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
     padding: 1.5rem;
     margin: 0 auto 3rem auto;
+}
+
+.member-card:nth-child(odd) {
+    animation: slideFromLeft .8s ease-out;
+}
+
+.member-card:nth-child(even) {
+    animation: slideFromRight .8s ease-out;
 }
 
 .member-card h4 {
@@ -696,4 +707,31 @@ input[type="submit"] {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Hacer las animaciones y la pagina de agradecimiento */
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Thanks */
+#thanks {
+    height: 60vh;
+}
