@@ -43,8 +43,16 @@ function displayDataInfo(data) {
         description.textContent = item.description;
         placeCard.appendChild(description);
 
-        placeCard.addEventListener('click', () => {
+        const button = document.createElement('button');
+        button.textContent = "Click Here";
+        button.classList.add("btn")
+        button.classList.add("click-here")
+        placeCard.appendChild(button);
+
+        button.addEventListener('click', () => {
             const visitMessage = generateVisitMessage(item.name);
+            button.classList.add("hide-button");
+            button.classList.remove("show-button");
 
             if (placeCard.querySelector('.visit-popup')) return;
 
@@ -58,6 +66,7 @@ function displayDataInfo(data) {
             closeBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 popup.remove();
+                button.classList.add("show-button");
             });
 
             popup.appendChild(closeBtn);
@@ -66,6 +75,7 @@ function displayDataInfo(data) {
             setTimeout(() => {
                 if (placeCard.contains(popup)) {
                     popup.remove();
+                    button.classList.add("show-button");
                 }
             }, 5000);
 
