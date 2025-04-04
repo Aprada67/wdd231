@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "name": "Campo de Carabobo",
+            "address": "Valencia Highway - Campo de Carabobo, Libertador Municipality.",
+            "description": "A historic monument where the Battle of Carabobo was fought in 1821, a key event in Venezuela's independence. It features a triumphal arch, statues, and a museum.",
+            "image": "images/places/campo-carabobo.webp"
+        },
+        {
+            "name": "Municipal Theater of Valencia",
+            "address": "Calle Colombia, between Av. Urdaneta and Av. Soublette, Valencia.",
+            "description": "A beautiful 19th-century theater with classic architecture. It hosts concerts, operas, and major cultural events in the city.",
+            "image": "images/places/teatro-municipal.webp"
+        },
+        {
+            "name": "Negra Hipolita Park",
+            "address": "Av. Paseo Cabriales, Valencia.",
+            "description": "One of the largest and most popular parks in Valencia. It offers walking trails, picnic areas, sports zones, and recreational events.",
+            "image": "images/places/negra-hipolita.webp"
+        },
+        {
+            "name": "Isla Larga",
+            "address": "Puerto Cabello Archipelago, accessible from the Quizandal dock.",
+            "description": "One of the most beautiful beaches in Carabobo. Ideal for snorkeling, diving, and enjoying crystal-clear waters.",
+            "image": "images/places/isla-larga.webp"
+        },
+        {
+            "name": "Malecón",
+            "address": "Av. El Malecón, Puerto Cabello.",
+            "description": "A scenic seaside promenade with views of the Caribbean Sea. Perfect for enjoying the sea breeze, restaurants, cafes, and spectacular sunsets.",
+            "image": "images/places/malecon.webp"
+        },
+        {
+            "name": "Dunas",
+            "address": "San Diego, Carabobo (near the Metropolitan Park).",
+            "description": "An impressive landscape of sand dunes, ideal for hiking and sandboarding. A unique spot for photography and nature connection.",
+            "image": "images/places/dunas.webp"
+        },
+        {
+            "name": "Patanemo Bay",
+            "address": "Puerto Cabello Municipality, accessible via the Patanemo road.",
+            "description": "A paradisiacal beach surrounded by mountains and vegetation. Its crystal-clear waters and tranquil atmosphere make it ideal for relaxation.",
+            "image": "images/places/patanemo.webp"
+        },
+        {
+            "name": "El Casupo Hill",
+            "address": "West of Valencia, entrance via Av. Andrés Eloy Blanco.",
+            "description": "A popular spot for hiking and exercise. It offers multiple trails leading to viewpoints with panoramic views of the city.",
+            "image": "images/places/casupo.webp"
+        }
+    ]
+}

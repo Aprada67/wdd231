@@ -46,6 +46,7 @@ body {
 }
 
 section,
+#discover-container,
 footer {
     padding: 2rem;
 }
@@ -734,4 +735,76 @@ input[type="submit"] {
 /* Thanks */
 #thanks {
     height: 60vh;
+}
+
+/* Discover */
+#discover-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.card-item {
+    display: grid;
+    grid-template-areas: 
+        "name"
+        "description"
+        "photo"
+        "location"
+        "last-visit";
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    max-width: 380px;
+    cursor: pointer;
+    background-color: var(--bg-tertiary-color);
+}
+
+.card-item h2 {
+    grid-area: name;
+    margin-bottom: 1rem;
+}
+
+.card-item p {
+    grid-area: description;
+    margin-bottom: 1rem;
+}
+
+.card-item img {
+    width: 100%;
+    grid-area: photo;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.card-item address {
+    grid-area: location;
+    margin-bottom: 1rem;
+}
+
+.card-item aside {
+    grid-area: last-visit;
+}
+
+/* Pop-up */
+.visit-popup {
+    position: relative;
+    background-color: var(--tertiary-color);
+    padding: 0.75rem;
+    border-radius: 4px;
+    width: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    border: none;
+    padding: .25rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    transform: translateY(-50%);
 }
