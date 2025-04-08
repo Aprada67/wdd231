@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Variable */
 :root {
     /* Colors */
     --font-primary-color: #161617;
@@ -11,7 +12,7 @@
     --bg-primary-color: #ffffff;
     --bg-secondary-color: #161617e0;
     --bg-tertiary-color: #1d1d1fcc;
-    --bg-quaternary-color: #e0e0e0;
+    --bg-quaternary-color: #999999;
     --primary-color: #0066cc;
     --primary-interactive-color: #0071e3;
     --secondary-color: #f5f5f7;
@@ -45,7 +46,8 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: black;
+    background-color: var(--bg-primary-color);
+    overflow: hidden;
 }
 
 section {
@@ -63,7 +65,97 @@ p {
 
 /* Navigation */
 header {
-    height: 70vh;
     position: relative;
     z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .25rem 1rem;
+    background-color: rgba(22, 22, 23, 0.88);
+}
+
+.navbar a {
+    color: var(--bg-quaternary-color);
+}
+
+.bar {
+    height: 2px;
+    width: 20px;
+    background-color: var(--bg-quaternary-color);
+    color: var(--bg-quaternary-color);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburguer menu */
+.menu {
+    display: none;
+    background-color: var(--bg-secondary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    transition: all .3seg ease;
+}
+
+.menu-active {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+}
+
+li a {
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a:hover {
+    color: var(--font-secondary-color);
+    cursor: pointer;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -5px;
+}
+
+/* Hamb menu list */
+.menu-list li a {
+    padding-left: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 1rem;
+    color: var(--font-secondary-color);
+}
+
+.menu-list li:first-of-type {
+    padding-top: 2.5rem;
 }

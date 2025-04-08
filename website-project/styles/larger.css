@@ -1,0 +1,57 @@
+@media only screen and (min-width: 768px) {
+    /* Variables */
+    :root {
+        /* Colors */
+        --font-primary-color: #161617;
+        --font-secondary-color: #ffffff;
+        --bg-primary-color: #ffffff;
+        --bg-secondary-color: #161617e0;
+        --bg-tertiary-color: #1d1d1fcc;
+        --bg-quaternary-color: #999999;
+        --primary-color: #0066cc;
+        --primary-interactive-color: #0071e3;
+        --secondary-color: #f5f5f7;
+        --secondary-interactive-color: #ff8c42;
+        --footer-text: #f5f5f7;
+    
+        /* Font sizes */
+        --font-title: 1.75rem;
+        --font-heading: 1.5rem;
+        --font-sub-heading: 1.25rem;
+        --font-medium: 1rem;
+        --font-small: .85rem;
+    
+        /* Font weight */
+        --font-weight-thin: 300;
+        --font-weight-normal-thin: 400;
+        --font-weight-normal: 500;
+        --font-weight-bold: 700;
+        --font-weight-extrabold: 900;
+    
+        /* Font Style */
+        --font-family-content: "Inter", sans-serif;
+    }
+
+    /* Navigation */
+    .navbar {
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        font-size: var(--font-small);
+        justify-content: space-evenly;
+        width: 40%;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-active {
+        flex-direction: row;
+    }
+}
