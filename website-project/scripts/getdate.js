@@ -1,6 +1,6 @@
 // Get actual year
 const currentYear = new Date().getFullYear();
-document.getElementById("copyrigth").textContent = `© ${currentYear} Nutrisport Lisbon`;
+document.getElementById("copyright").textContent = `© ${currentYear} Nutrisport Lisbon`;
 
 // Last modification
 const lastModifiedDate = new Date(document.lastModified);
