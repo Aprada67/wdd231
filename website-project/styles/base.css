@@ -10,9 +10,8 @@
     --font-primary-color: #161617;
     --font-secondary-color: #ffffff;
     --bg-primary-color: #ffffff;
-    --bg-secondary-color: #161617e0;
-    --bg-tertiary-color: #1d1d1fcc;
-    --bg-quaternary-color: #999999;
+    --bg-secondary-color: #161617;
+    --bg-tertiary-color: #999999;
     --primary-color: #0066cc;
     --primary-interactive-color: #0071e3;
     --secondary-color: #f5f5f7;
@@ -47,7 +46,6 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     background-color: var(--bg-primary-color);
-    overflow: hidden;
 }
 
 section {
@@ -63,6 +61,50 @@ p {
     font-size: var(--font-medium);
 }
 
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.social-links a img {
+    transition: fill 0.5s ease;
+    cursor: pointer;
+}
+
+.creator img {
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.btn {
+    font-size: var(--font-small);
+    padding: .65rem 1rem;
+    border-radius: 30px;
+    font-weight: var(--font-weight-normal-thin);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-interactive-color);
+}
+
+.btn-secondary {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.btn-secondary:hover {
+    color: var(--font-secondary-color);
+    background-color: var(--primary-interactive-color);
+    border: none;
+}
+
 /* Navigation */
 header {
     position: relative;
@@ -75,18 +117,18 @@ header {
     align-items: center;
     width: 100%;
     padding: .25rem 1rem;
-    background-color: rgba(22, 22, 23, 0.88);
+    background-color: rgb(22, 22, 23);
 }
 
 .navbar a {
-    color: var(--bg-quaternary-color);
+    color: var(--bg-tertiary-color);
 }
 
 .bar {
     height: 2px;
     width: 20px;
-    background-color: var(--bg-quaternary-color);
-    color: var(--bg-quaternary-color);
+    background-color: var(--bg-tertiary-color);
+    color: var(--bg-tertiary-color);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -113,6 +155,8 @@ header {
 
 li a {
     list-style: none;
+    color: var(--bg-tertiary-color);
+    cursor: pointer;
 }
 
 .menu li {
@@ -120,9 +164,8 @@ li a {
     align-items: center;
 }
 
-.menu li a:hover {
-    color: var(--font-secondary-color);
-    cursor: pointer;
+.menu li:hover {
+    background-color: var(--bg-tertiary-color);
 }
 
 .menu-icon {
@@ -148,14 +191,124 @@ li a {
 }
 
 /* Hamb menu list */
+.menu-list li {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    cursor: pointer;
+}
+
 .menu-list li a {
     padding-left: 2.5rem;
     font-size: 1.75rem;
     font-weight: var(--font-weight-normal);
-    margin-bottom: 1rem;
     color: var(--font-secondary-color);
 }
 
-.menu-list li:first-of-type {
-    padding-top: 2.5rem;
+/* Hero */
+#hero {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img,
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img {
+    z-index: 1;
+}
+
+.hero-img .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.content h1 {
+    margin: 0 auto 2rem auto;
+    width: 70%;
+    color: var(--font-secondary-color);
+    font-size: var(--font-title);
+    line-height: 1.5;
+}
+
+.social-links {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    right: 1rem;
+}
+
+.content .btn-secondary {
+    margin-left: 1rem;
+}
+
+/* Creator */
+.creator {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--bg-secondary-color);
+    padding: .5rem;
+    color: var(--font-secondary-color);
+}
+
+.creator p {
+    font-size: .85rem;
+}
+
+.creator-container {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Info */
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-header {
+    position: relative;
+}
+
+.info-img,
+.info-content {
+    width: 100%;
+    height: auto;
+}
+
+.section-header {
+    position: absolute;
+    color: var(--font-secondary-color);
+    width: 100%;
+    text-align: center;
+    top: 1.5rem;
+}
+
+.info-content {
+
+}
+
+/* Footer */
+footer {
+    background-color: black;
 }
