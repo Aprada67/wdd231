@@ -20,48 +20,54 @@
         next level? Join the Nutrisport Lisbon community and get access to exclusive content, 
         expert advice, and member-only offers. Fuel your body. Unlock your potential.">
 
-    <link rel="icon" type="image/webp" sizes="32x32" href="images/favicon.webp?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png?v=2">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JS -->
-    <script src="scripts/nutrisport.js" defer></script>
     <script src="scripts/hamb-menu.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
+
+    <!-- MJS -->
 </head>
 
 <body>
-
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
             <div class="navbar-left">
-                <img id="logo" class="logo" src="images/logo.webp" alt="Logo" loading="lazy" width="50" height="50">
-                <h2 id="logo-name">Nutrisport</h2>
+                <img id="logo" class="logo" src="images/logo_25x25.webp" alt="Logo" loading="lazy" width="25"
+                    height="25">
             </div>
             <div class="menu-icon" id="menu-icon">
-                <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
             <ul id="menu" class="menu">
                 <li>
-                    <span class="material-symbols-outlined">home</span>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <span class="material-symbols-outlined">folder</span>
-                    <a href="#explore">Explore</a>
+                    <a href="#info">Explore</a>
                 </li>
                 <li>
-                    <span class="material-symbols-outlined">person_add</span>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <span class="material-symbols-outlined">search</span>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
                     <a href="join.html">Join</a>
                 </li>
             </ul>
@@ -76,31 +82,40 @@
     <footer class="footer-container">
         <div class="footer-info">
             <h4>Contact Us</h4>
-            <p>albertojprada10@hotmail.com</p>
-            <p>+351 912634153</p>
-            <p>Lisbon - Portugal</p>
+            <p>Email: albertojprada10@hotmail.com</p>
+            <p>Phone: +351 912634153</p>
+            <p>Location: Lisbon, Portugal</p>
+            <p>Available for freelance projects or collaborations!</p>
         </div>
-        <div class="social-links">
+    
+        <div>
             <h4>Stay Connected</h4>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="images/facebook.svg" alt="Facebook" loading="lazy" width="25" height="25">
+            <div class="social-icons-footer">
+                <a href="https://github.com/Aprada67" target="_blank">
+                    <img class="social-icons" src="images/social/github.png" alt="Github" loading="lazy" width="25" height="25">
                 </a>
-                <a href="https://x.com" target="_blank">
-                    <img src="images/x.svg" alt="X" loading="lazy" width="25" height="25">
+                <a href="https://www.linkedin.com/in/alberto-prada67/" target="_blank">
+                    <img class="social-icons" src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25" height="25">
                 </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="images/instagram.svg" alt="Instagram" loading="lazy" width="25" height="25">
+                <a href="https://www.instagram.com/albertoprada__/" target="_blank">
+                    <img class="social-icons" src="images/social/instagram.png" alt="Instagram" loading="lazy" width="25" height="25">
+                </a>
+                <a href="mailto:albertojprada10@gmail.com" target="_blank" aria-label="E-mail">
+                    <img class="social-icons" src="images/social/email.png" alt="E-mail" loading="lazy" width="25" height="25">
                 </a>
             </div>
+            <p>Follow me on my social networks for more content and updates.</p>
         </div>
+    
         <div class="my-info">
+            <h4>About This Site</h4>
             <p>WDD231 Class Project</p>
-            <p>Alberto Prada</p>
+            <p>Designed & Developed by Alberto Prada</p>
+            <p>Passionate about web development and user experience.</p>
             <p id="copyright"></p>
             <p id="last-modified"></p>
         </div>
-    </footer>
+    </footer> 
 </body>
 
 </html>
