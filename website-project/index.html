@@ -36,9 +36,12 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JS -->
-    <script src="scripts/nutrisport.js" defer></script>
+    <script src="scripts/main.js" type="module"></script>
     <script src="scripts/hamb-menu.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
+
+    <!-- MJS -->
+    <script src="scripts/utils.mjs" type="module"></script>
 </head>
 
 <body>
@@ -59,10 +62,13 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#explore">Explore</a>
+                    <a href="#info">Explore</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
                 </li>
                 <li>
                     <a href="join.html">Join</a>
@@ -82,19 +88,21 @@
                 </picture>
             </div>
             <div class="social-links">
-                <a class="social-icons" href="https://github.com/Aprada67" target="_blank" aria-label="github">
-                    <img src="images/social/github.png" alt="Github" loading="lazy" width="25" height="25">
+                <a href="https://github.com/Aprada67" target="_blank" aria-label="github">
+                    <img class="social-icons" src="images/social/github.png" alt="Github" loading="lazy" width="25"
+                        height="25">
                 </a>
-                <a class="social-icons" href="https://www.linkedin.com/in/alberto-prada67/" target="_blank"
-                    aria-label="linkedin">
-                    <img src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25" height="25">
+                <a href="https://www.linkedin.com/in/alberto-prada67/" target="_blank" aria-label="linkedin">
+                    <img class="social-icons" src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25"
+                        height="25">
                 </a>
-                <a class="social-icons" href="https://www.instagram.com/albertoprada__/" target="_blank"
-                    aria-label="instagram">
-                    <img src="images/social/instagram.png" alt="Instagram" loading="lazy" width="25" height="25">
+                <a href="https://www.instagram.com/albertoprada__/" target="_blank" aria-label="instagram">
+                    <img class="social-icons" src="images/social/instagram.png" alt="Instagram" loading="lazy"
+                        width="25" height="25">
                 </a>
-                <a class="social-icons" href="mailto:albertojprada10@gmail.com" target="_blank" aria-label="E-mail">
-                    <img src="images/social/email.png" alt="E-mail" loading="lazy" width="25" height="25">
+                <a href="mailto:albertojprada10@gmail.com" target="_blank" aria-label="E-mail">
+                    <img class="social-icons" src="images/social/email.png" alt="E-mail" loading="lazy" width="25"
+                        height="25">
                 </a>
             </div>
             <div class="content">
@@ -123,7 +131,7 @@
             </div>
         </div>
 
-        <!-- Sectrion Info -->
+        <!-- Info -->
         <section id="info">
             <div class="info-header">
                 <div class="overlay-2"></div>
@@ -131,73 +139,112 @@
                 <h2 class="section-header">Simple Nutrition, Real Results</h2>
                 <div class="info-content">
                     <p>
-                        At Nutrisport Lisbon, we believe that fueling your body should be simple.
-                        That's why we provide easy, healthy recipes designed for real people with real lives.
+                        At Nutrisport Lisbon, we make healthy eating simple and accessible with easy recipes and
+                        practical tips for everyday life.
                     </p>
                     <br>
                     <p>
-                        Discover the benefits of everyday ingredients, learn how to build a balanced plate, and
-                        gain the knowledge you need to make smarter choices.
-                    </p>
-                    <br>
-                    <p>
-                        Healthy eating isn't a luxury. It's a lifestyle accessible, affordable, and achievable for everyone.
+                        Learn to fuel your body better and enjoy a balanced, affordable lifestyle.
                     </p>
                 </div>
             </div>
             <div class="info-header">
                 <div class="overlay-2"></div>
-                <img class="info-img" src="images/featured-food.webp" alt="Featured food" loading="lazy" width="730" height="730">
+                <img class="info-img" src="images/featured-food.webp" alt="Featured food" loading="lazy" width="730"
+                    height="730">
                 <h2 class="section-header">Smart Nutrition for a Healthy Lifestyle</h2>
                 <div class="info-content">
                     <p>
-                        At Nutrisport Lisbon, we believe healthy eating should be simple. We offer easy, nutritious recipes for real people with real lives.
+                        At Nutrisport Lisbon, we make healthy eating simple with practical recipes for everyday life.
                     </p>
                     <br>
                     <p>
-                        Good nutrition is essential for better energy, focus, and long-term health. It’s not about restrictions, it’s about making smarter choices.
-                    </p>
-                    <br>
-                    <p>
-                        Whether you’re an athlete or just want to feel better, healthy eating is achievable for everyone.
+                        Good nutrition boosts your energy, focus, and well-being — it's about smart choices, not
+                        restrictions.
                     </p>
                 </div>
             </div>
         </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-container"></div>
+            <div class="navigation">
+                <button class="prev">←</button>
+                <button class="next">→</button>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+
+            <form action="https://formsubmit.co/ajax/albertojprada10@gmail.com" method="POST" id="contact-form">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group">
+                    <label for="name" style="color: black;">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" style="color: black;">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" style="color: black;">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button class="submit-btn" type="submit">Send</button>
+
+                <p id="form-message" style="margin-top:10px; color: green; display:none;"></p>
+            </form>
+        </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer-container">
         <div class="footer-info">
             <h4>Contact Us</h4>
-            <p>albertojprada10@hotmail.com</p>
-            <p>+351 912634153</p>
-            <p>Lisbon - Portugal</p>
+            <p>Email: albertojprada10@hotmail.com</p>
+            <p>Phone: +351 912634153</p>
+            <p>Location: Lisbon, Portugal</p>
+            <p>Available for freelance projects or collaborations!</p>
         </div>
-        <div class="social-footer">
+    
+        <div>
             <h4>Stay Connected</h4>
-            <div class="social-icons">
-                <a class="social-icons" href="https://github.com/Aprada67" target="_blank">
-                    <img src="images/social/github.png" alt="Github" loading="lazy" width="25" height="25">
+            <div class="social-icons-footer">
+                <a href="https://github.com/Aprada67" target="_blank">
+                    <img class="social-icons" src="images/social/github.png" alt="Github" loading="lazy" width="25" height="25">
                 </a>
-                <a class="social-icons" href="https://www.linkedin.com/in/alberto-prada67/" target="_blank">
-                    <img src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25" height="25">
+                <a href="https://www.linkedin.com/in/alberto-prada67/" target="_blank">
+                    <img class="social-icons" src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25" height="25">
                 </a>
-                <a class="social-icons" href="https://www.instagram.com/albertoprada__/" target="_blank">
-                    <img src="images/social/instagram.png" alt="Instagram" loading="lazy" width="25" height="25">
+                <a href="https://www.instagram.com/albertoprada__/" target="_blank">
+                    <img class="social-icons" src="images/social/instagram.png" alt="Instagram" loading="lazy" width="25" height="25">
                 </a>
-                <a class="social-icons" href="mailto:albertojprada10@gmail.com" target="_blank" aria-label="E-mail">
-                    <img src="images/social/email.png" alt="E-mail" loading="lazy" width="25" height="25">
+                <a href="mailto:albertojprada10@gmail.com" target="_blank" aria-label="E-mail">
+                    <img class="social-icons" src="images/social/email.png" alt="E-mail" loading="lazy" width="25" height="25">
                 </a>
             </div>
+            <p>Follow me on my social networks for more content and updates.</p>
         </div>
+    
         <div class="my-info">
+            <h4>About This Site</h4>
             <p>WDD231 Class Project</p>
-            <p>Alberto Prada</p>
+            <p>Designed & Developed by Alberto Prada</p>
+            <p>Passionate about web development and user experience.</p>
             <p id="copyright"></p>
             <p id="last-modified"></p>
         </div>
-    </footer>
+    </footer>    
 </body>
 
 </html>

@@ -1,6 +1,11 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
     /* Info */
     #info {
         flex-direction: row;
+    }
+
+    /* Testimonial */
+    .testimonials-container {
+        gap: 1.25rem;
     }
 }

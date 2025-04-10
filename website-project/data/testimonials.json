@@ -1,0 +1,38 @@
+[
+    {
+        "img": "images/icons/user.png",
+        "name": "John Doe",
+        "rating": 5,
+        "comment": "This product has changed my life! I feel more energetic and focused."
+    },
+    {
+        "img": "images/icons/user.png",
+        "name": "Jane Smith",
+        "rating": 4,
+        "comment": "Great service and really tasty meals. Would highly recommend!"
+    },
+    {
+        "img": "images/icons/user.png",
+        "name": "Emily White",
+        "rating": 5,
+        "comment": "I've never felt better since I started following their advice."
+    },
+    {
+        "img": "images/icons/user.png",
+        "name": "Michael Brown",
+        "rating": 4,
+        "comment": "Nutritious meals that are easy to make. I'm loving it."
+    },
+    {
+        "img": "images/icons/user.png",
+        "name": "Sarah Green",
+        "rating": 5,
+        "comment": "A game changer in the world of fitness and health."
+    },
+    {
+        "img": "images/icons/user.png",
+        "name": "David Lee",
+        "rating": 5,
+        "comment": "The best investment I made in my health. Thank you!"
+    }
+]
