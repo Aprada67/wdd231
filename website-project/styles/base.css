@@ -43,12 +43,9 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     background-color: var(--bg-primary-color);
 }
-
-
 
 a {
     text-decoration: none;
@@ -94,6 +91,7 @@ footer {
 
 .btn-primary {
     background-color: var(--primary-color);
+    color: var(--font-secondary-color);
 }
 
 .btn-primary:hover {
@@ -164,6 +162,10 @@ li a {
     list-style: none;
     color: var(--bg-tertiary-color);
     cursor: pointer;
+}
+
+li {
+    list-style: none;
 }
 
 .menu li {
@@ -318,13 +320,24 @@ li a {
     padding: 0 1rem 0 1rem;
 }
 
-.overlay-2 {
+.overlay-2,
+.overlay-4 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.overlay-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -338,6 +351,52 @@ li a {
     right: 0;
     z-index: 2;
 }
+
+/* Suplements and Nutrition */
+
+.nutrition-content {
+    position: absolute;
+    color: var(--font-secondary-color);
+    padding: 2rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.nutrition-content h2,
+.nutrition-content p {
+    margin-bottom: 2rem;
+}
+
+/* Dialog box styling */
+dialog {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#suplements-dialog-content,
+#nutrition-dialog-content {
+    text-align: center;
+}
+
+#suplements-dialog-buttons button,
+#nutrition-dialog-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#suplements-dialog-buttons button:hover,
+#nutrition-dialog-buttons button:hover {
+    background-color: #f0f0f0;
+}
+
 
 /* Testimonials */
 #testimonials {
@@ -369,8 +428,8 @@ li a {
     width: 280px;
     height: 300px;
     text-align: center;
-    opacity: 0;  /* Comienza invisible */
-    animation: fadeIn 0.5s ease-out forwards;  /* Aplica la animación */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 .testimonial-card img {
@@ -410,7 +469,7 @@ button {
 
 button:hover {
     background: var(--bg-tertiary-color);
-    color: var var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 /* Contact */
@@ -421,19 +480,19 @@ button:hover {
     margin: 0 auto;
     padding: 2rem;
     color: var(--font-primary-color);
-  }
-  
-  #contact h2 {
+}
+
+#contact h2 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
-  }
-  
-  #contact p {
+}
+
+#contact p {
     font-size: 1rem;
     margin-bottom: 2.25rem;
-  }
+}
 
-  #contact-form {
+#contact-form {
     display: grid;
     gap: 1.25rem;
     max-width: 600px;
@@ -443,28 +502,29 @@ button:hover {
     padding: 1.25rem;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     font-size: 1rem;
     font-weight: bold;
     color: var(--font-primary-color);
-  }
-  
-  .form-group input, .form-group textarea {
+}
+
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: .75rem;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .form-group textarea {
+}
+
+.form-group textarea {
     resize: vertical;
     min-height: 150px;
-  }
-  
-  .submit-btn {
+}
+
+.submit-btn {
     padding: 12px 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -475,27 +535,27 @@ button:hover {
     transition: background-color 0.3s ease;
     width: 100%;
     margin: 0 auto;
-  }
-  
-  .submit-btn:hover {
+}
+
+.submit-btn:hover {
     background-color: var(--primary-interactive-color);
-  }
-  
-  /* Contact info styles */
-  .contact-info {
+}
+
+/* Contact info styles */
+.contact-info {
     margin-top: 2.25rem;
-  }
-  
-  .contact-info h3 {
+}
+
+.contact-info h3 {
     font-size: 1.5rem;
     margin-bottom: .75rem;
-  }
-  
-  .contact-info p {
+}
+
+.contact-info p {
     font-size: 1rem;
     color: var(--bg-tertiary-color);
-  }
-  
+}
+
 
 /* Footer */
 .footer-container {
@@ -524,14 +584,326 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
+/*-----------------------
+----- About Section -----
+-----------------------*/
+#about-section,
+#mission-vision-section,
+#testimonials-section,
+#faq-section {
+    padding: 2rem;
+}
+
+#about-section {
+    background-color: var(--bg-primary-color);
+    text-align: center;
+}
+
+#about-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#about-section p {
+    font-size: 1rem;
+    color: var(--bg-tertiary-color);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mission and Vision Section */
+#mission-vision-section {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#mission-vision-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#mission-vision-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Testimonials Section */
+#testimonials-section {
+    background-color: var(--bg-primary-color);
+    text-align: center;
+}
+
+#testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#testimonial {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+#testimonial p {
+    font-style: italic;
+}
+
+#testimonial p:last-child {
+    font-weight: bold;
+}
+
+/* FAQ Section */
+#faq-section {
+    background-color: #f4f4f4;
+}
+
+#faq-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: var(--bg-tertiary-color);
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact-2 {
+    background-color: var(--bg-primary-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#contact-2 h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#contact-2 p {
+    font-size: 1.1rem;
+    color: var(--bg-tertiary-color);
+    line-height: 1.8;
+}
+
+#contact-2 .email {
+    color: var(--secondary-interactive-color);
+    text-decoration: none;
+}
+
+#contact-2 .email:hover {
+    text-decoration: underline;
+}
+
+/*----------------------
+------- Join Form ------
+-----------------------*/
+#join-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#join-form h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#join-form p {
+    margin-bottom: .5rem;
+}
+
+input {
+    width: 100%;
+    padding: .85rem;
+    margin: .75rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.required {
+    color: red;
+}
+
+/*----------------------
+------- Thankyou -------
+-----------------------*/
+#thanks {
+    padding: 2rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thanks-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thanks-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.thanks-subtitle {
+    font-size: 1rem;
+    color: var(--bg-tertiary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.thanks-info {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto 2rem auto;
+}
+
+.thanks-info p {
+    margin: 0.5rem 0;
+}
+
+.thanks-time {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.return {
+    display: block;
+    text-align: center;
+    width: 40%;
+    min-width: 135px;
+    margin: 0 auto;
+    color: var(--secondary-color);
+}
+
+/* Dialog */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog {
+    border: none;
+    border-radius: 4px;
+    padding: 2rem;
+    max-width: 800px;
+    width: 90%;
+    background-color: var(--bg-primary-color);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    animation: fadeIn 0.3s ease;
+    line-height: 1.5;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.close-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dialog-footer button {
+    margin: 0;
+}
+
+.dialog-body {
+    margin-bottom: 1rem;
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-footer button {
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dialog-footer button:hover {
+    background-color: #005fcc;
+}
+
+
 /* Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateX(-50%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -37,6 +37,7 @@
 
     <!-- JS -->
     <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/nutrition.js" type="module"></script>
     <script src="scripts/hamb-menu.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
 
@@ -165,6 +166,34 @@
             </div>
         </section>
 
+        <!-- Supplements -->
+        <section id="supplements" class="info-header">
+            <div class="overlay-3"></div>
+            <img class="info-img" src="images/supplements-background.webp" alt="supplements" loading="lazy" width="730"
+                height="350">
+            <div class="nutrition-content">
+                <h2>Supplements</h2>
+                <p>Discover the best supplements to fuel your performance and recovery.</p>
+                <button class="btn-primary btn" id="show-supplements-dialog">Find Yours</button>
+            </div>
+            <!-- Dialog for Supplements -->
+            <dialog id="supplements-dialog"></dialog>
+        </section>
+
+        <!-- Nutrition -->
+        <section id="nutrition" class="info-header">
+            <div class="overlay-4"></div>
+            <img class="info-img" src="images/nutrition-background.webp" alt="Alimentación" loading="lazy" width="730"
+                height="350">
+            <div class="nutrition-content">
+                <h2>Nutrition</h2>
+                <p>Explore balanced and healthy nutrition options to boost your daily routine.</p>
+                <button class="btn-primary btn" id="show-nutrition-dialog">Watch Recipies</button>
+            </div>
+            <!-- Dialog for Nutrition -->
+            <dialog id="recipe-dialog"></dialog>
+        </section>
+
         <!-- Testimonials -->
         <section id="testimonials">
             <h2>What Our Customers Say</h2>
@@ -215,26 +244,30 @@
             <p>Location: Lisbon, Portugal</p>
             <p>Available for freelance projects or collaborations!</p>
         </div>
-    
+
         <div>
             <h4>Stay Connected</h4>
             <div class="social-icons-footer">
                 <a href="https://github.com/Aprada67" target="_blank">
-                    <img class="social-icons" src="images/social/github.png" alt="Github" loading="lazy" width="25" height="25">
+                    <img class="social-icons" src="images/social/github.png" alt="Github" loading="lazy" width="25"
+                        height="25">
                 </a>
                 <a href="https://www.linkedin.com/in/alberto-prada67/" target="_blank">
-                    <img class="social-icons" src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25" height="25">
+                    <img class="social-icons" src="images/social/linkedin.png" alt="LinkedIn" loading="lazy" width="25"
+                        height="25">
                 </a>
                 <a href="https://www.instagram.com/albertoprada__/" target="_blank">
-                    <img class="social-icons" src="images/social/instagram.png" alt="Instagram" loading="lazy" width="25" height="25">
+                    <img class="social-icons" src="images/social/instagram.png" alt="Instagram" loading="lazy"
+                        width="25" height="25">
                 </a>
                 <a href="mailto:albertojprada10@gmail.com" target="_blank" aria-label="E-mail">
-                    <img class="social-icons" src="images/social/email.png" alt="E-mail" loading="lazy" width="25" height="25">
+                    <img class="social-icons" src="images/social/email.png" alt="E-mail" loading="lazy" width="25"
+                        height="25">
                 </a>
             </div>
             <p>Follow me on my social networks for more content and updates.</p>
         </div>
-    
+
         <div class="my-info">
             <h4>About This Site</h4>
             <p>WDD231 Class Project</p>
@@ -243,7 +276,7 @@
             <p id="copyright"></p>
             <p id="last-modified"></p>
         </div>
-    </footer>    
+    </footer>
 </body>
 
 </html>

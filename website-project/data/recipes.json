@@ -1,0 +1,35 @@
+{
+    "recipes": [
+        {
+            "title": "Chicken Salad",
+            "ingredients": [
+                "Chicken",
+                "Lettuce",
+                "Tomatoes",
+                "Olive oil",
+                "Lemon"
+            ],
+            "instructions": "Grill chicken, chop veggies, and mix with olive oil and lemon."
+        },
+        {
+            "title": "Oats Porridge",
+            "ingredients": [
+                "Oats",
+                "Milk",
+                "Honey",
+                "Bananas"
+            ],
+            "instructions": "Cook oats with milk, add honey and sliced bananas."
+        },
+        {
+            "title": "Smoothie Bowl",
+            "ingredients": [
+                "Bananas",
+                "Berries",
+                "Yogurt",
+                "Granola"
+            ],
+            "instructions": "Blend bananas and berries, pour into a bowl, and top with granola."
+        }
+    ]
+}
