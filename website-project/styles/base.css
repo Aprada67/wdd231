@@ -374,33 +374,6 @@ li {
     margin-bottom: 1rem;
 }
 
-/* Dialog box styling */
-dialog {
-    width: 80%;
-    max-width: 600px;
-    padding: 1.25rem;
-    border: none;
-    border-radius: 4px;
-    background-color:  var(--bg-primary-color);
-}
-
-#suplements-dialog-content,
-#nutrition-dialog-content {
-    text-align: center;
-}
-
-#suplements-dialog-buttons button,
-#nutrition-dialog-buttons button {
-    margin: .75rem;
-    padding: .75rem 1.25rem;
-    cursor: pointer;
-}
-
-#suplements-dialog-buttons button:hover,
-#nutrition-dialog-buttons button:hover {
-    background-color: #f0f0f0;
-}
-
 /* Testimonials */
 #testimonials {
     padding: 2rem 0;
@@ -513,9 +486,9 @@ button:hover {
 }
 
 #form-message {
-    margin-top:10px;
+    margin-top: 10px;
     color: green;
-    display:none;
+    display: none;
 }
 
 .form-group label {
@@ -833,6 +806,7 @@ input {
 }
 
 /* Dialog */
+
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -855,6 +829,10 @@ dialog {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.dialog-body {
     font-size: 1.25rem;
 }
 
@@ -884,17 +862,17 @@ dialog {
 }
 
 .dialog-footer button {
-    background-color: #0077ff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--font-secondary-color);
     border: none;
     padding: 0.5rem 1.2rem;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
 
 .dialog-footer button:hover {
-    background-color: #005fcc;
+    background-color: var(--primary-interactive-color);
 }
 
 .dialog-image {
@@ -903,6 +881,23 @@ dialog {
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 1rem;
+}
+
+#suplements-dialog-content,
+#nutrition-dialog-content {
+    text-align: center;
+}
+
+#suplements-dialog-buttons button,
+#nutrition-dialog-buttons button {
+    margin: .75rem;
+    padding: .75rem 1.25rem;
+    cursor: pointer;
+}
+
+#suplements-dialog-buttons button:hover,
+#nutrition-dialog-buttons button:hover {
+    background-color: #f0f0f0;
 }
 
 /* Weather */
