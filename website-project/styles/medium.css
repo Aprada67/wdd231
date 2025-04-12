@@ -86,6 +86,11 @@
     #supplements h2,
     #nutrition h2 {
         font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .nutrition-content {
+        width: 50%;
     }
 
     /* Testimonial */

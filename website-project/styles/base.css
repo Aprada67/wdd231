@@ -138,6 +138,10 @@ header {
     transition: all 0.3s ease;
 }
 
+#logo {
+    width: 32px;
+}
+
 /* Hamburguer menu */
 .menu {
     display: none;
@@ -353,7 +357,6 @@ li {
 }
 
 /* Suplements and Nutrition */
-
 .nutrition-content {
     position: absolute;
     color: var(--font-secondary-color);
@@ -363,11 +366,12 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    width: 80%;
 }
 
 .nutrition-content h2,
 .nutrition-content p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Dialog box styling */
@@ -396,7 +400,6 @@ dialog {
 #nutrition-dialog-buttons button:hover {
     background-color: #f0f0f0;
 }
-
 
 /* Testimonials */
 #testimonials {
@@ -896,7 +899,7 @@ dialog {
 
 .dialog-image {
     width: 100%;
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 1rem;
