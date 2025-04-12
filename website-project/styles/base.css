@@ -378,10 +378,10 @@ li {
 dialog {
     width: 80%;
     max-width: 600px;
-    padding: 20px;
+    padding: 1.25rem;
     border: none;
-    border-radius: 10px;
-    background-color: #fff;
+    border-radius: 4px;
+    background-color:  var(--bg-primary-color);
 }
 
 #suplements-dialog-content,
@@ -391,8 +391,8 @@ dialog {
 
 #suplements-dialog-buttons button,
 #nutrition-dialog-buttons button {
-    margin: 10px;
-    padding: 10px 20px;
+    margin: .75rem;
+    padding: .75rem 1.25rem;
     cursor: pointer;
 }
 
