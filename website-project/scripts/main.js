@@ -121,7 +121,7 @@ const form = document.getElementById('contact-form');
 const message = document.getElementById('form-message');
 
 form.addEventListener('submit', async function(e) {
-  e.preventDefault(); // Evita recargar o redireccionar
+  e.preventDefault();
 
   const formData = new FormData(form);
 
@@ -134,16 +134,16 @@ form.addEventListener('submit', async function(e) {
     if (response.ok) {
       message.style.display = 'block';
       message.style.color = 'green';
-      message.textContent = '¡Tu mensaje ha sido enviado correctamente!';
-      form.reset(); // Limpia el formulario
+      message.textContent = 'Your message has been sent successfully.!';
+      form.reset();
     } else {
       message.style.display = 'block';
       message.style.color = 'red';
-      message.textContent = 'Hubo un error, intenta nuevamente.';
+      message.textContent = 'There was an error, please try again.';
     }
   } catch (error) {
     message.style.display = 'block';
     message.style.color = 'red';
-    message.textContent = 'Error al enviar el mensaje.';
+    message.textContent = 'Error sending the message.';
   }
 });
