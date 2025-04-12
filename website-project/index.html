@@ -38,6 +38,7 @@
     <!-- JS -->
     <script src="scripts/main.js" type="module"></script>
     <script src="scripts/nutrition.js" type="module"></script>
+    <script src="scripts/weather.js" type="module"></script>
     <script src="scripts/hamb-menu.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
 
@@ -136,16 +137,15 @@
             <div class="info-header">
                 <div class="overlay-2"></div>
                 <img class="info-img" src="images/info.webp" alt="Training" loading="lazy" width="730" height="730">
-                <h2 class="section-header">Simple Nutrition, Real Results</h2>
+                <h2 class="section-header">Boost Your Performance with Supplements</h2>
                 <div class="info-content">
                     <p>
-                        At Nutrisport Lisbon, we make healthy eating simple and accessible with easy recipes and
-                        practical tips for everyday life.
+                        We recommend high-quality supplements to boost your performance and health.
                     </p>
                     <br>
                     <p>
-                        Learn to fuel your body better and enjoy a balanced, affordable lifestyle.
-                    </p>
+                        Fuel your body with the right supplements for better results and a healthier lifestyle.
+                    </p>                    
                 </div>
             </div>
             <div class="info-header">
@@ -155,7 +155,7 @@
                 <h2 class="section-header">Smart Nutrition for a Healthy Lifestyle</h2>
                 <div class="info-content">
                     <p>
-                        At Nutrisport Lisbon, we make healthy eating simple with practical recipes for everyday life.
+                        We make healthy eating simple with practical recipes for everyday life.
                     </p>
                     <br>
                     <p>
@@ -194,6 +194,26 @@
             <dialog id="recipe-dialog"></dialog>
         </section>
 
+        <!--API Weather -->
+        <section id="weather">
+            <h3>Current Weather</h3>
+            <div class="weather">
+                <figure>
+                    <img id="weather-icon" class="hide-icon" src="https://openweathermap.org/img/w/.png" alt="Weather Icon" loading="lazy" width="75" height="75">
+                    <figcaption></figcaption>
+                </figure>
+                <div class="weather-info">
+                    <p><span id="current-temp">Loading...</span></p>
+                    <p><span id="current-weather">Loading...</span></p>
+                    <p>High: <span id="high-temp">Loading...</span></p>
+                    <p>Low: <span id="low-temp">Loading...</span></p>
+                    <p>Humidity: <span id="humidity">Loading...</span></p>
+                    <strong id="advice">Please click the button to get the weather.</strong>
+                </div>
+            </div>
+            <button id="get-location-btn" class="btn-secondary btn">Get Current Location</button>
+        </section>
+
         <!-- Testimonials -->
         <section id="testimonials">
             <h2>What Our Customers Say</h2>
@@ -229,7 +249,7 @@
 
                 <button class="submit-btn" type="submit">Send</button>
 
-                <p id="form-message" style="margin-top:10px; color: green; display:none;"></p>
+                <p id="form-message"></p>
             </form>
         </section>
 
@@ -265,7 +285,7 @@
                         height="25">
                 </a>
             </div>
-            <p>Follow me on my social networks for more content and updates.</p>
+            <p class="follow-me">Follow me on my social networks for more content and updates.</p>
         </div>
 
         <div class="my-info">

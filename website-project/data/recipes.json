@@ -2,6 +2,7 @@
     "recipes": [
         {
             "title": "Chicken Salad",
+            "image": "images/chicken-salad.jpg",
             "ingredients": [
                 "Chicken",
                 "Lettuce",
@@ -13,6 +14,7 @@
         },
         {
             "title": "Oats Porridge",
+            "image": "images/oats-porridge.jpg",
             "ingredients": [
                 "Oats",
                 "Milk",
@@ -23,6 +25,7 @@
         },
         {
             "title": "Smoothie Bowl",
+            "image": "images/smoothie-bowl.jpg",
             "ingredients": [
                 "Bananas",
                 "Berries",

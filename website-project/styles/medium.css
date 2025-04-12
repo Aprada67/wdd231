@@ -82,6 +82,12 @@
         width: 100%;
     }
 
+    /* Nutrition */
+    #supplements h2,
+    #nutrition h2 {
+        font-size: 3rem;
+    }
+
     /* Testimonial */
     .testimonials-container {
         gap: .75rem;

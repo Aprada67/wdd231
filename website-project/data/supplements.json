@@ -2,14 +2,17 @@
     "supplements": [
         {
             "name": "Whey Protein",
+            "image": "images/whey-protein.jpg",
             "description": "A fast-digesting protein that helps in muscle recovery."
         },
         {
             "name": "Creatine",
+            "image": "images/creatine.jpg",
             "description": "Boosts strength and enhances muscle growth."
         },
         {
             "name": "BCAA",
+            "image": "images/bcaa.jpg",
             "description": "Helps prevent muscle breakdown during workouts."
         }
     ]
